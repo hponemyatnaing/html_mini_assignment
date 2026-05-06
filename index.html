@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simple HTML website that demonstrates basic elements such as navigation, image gallery, table, video, map, and a contact form."
+    />
+    <meta
+      name="keywords"
+      content="HTML, Form, Image, Gallery, Table, Video, Map, Website"
+    />
+    <!-- open graph tag -->
+    <meta
+      property="og:title"
+      content="HTML_Mini_Assignment-Overall about HTML"
+    />
+    <meta
+      property="og:description"
+      content="Learn HTML structure with image gallery, tables, forms, video, and map embed."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cgm-myanmar.com" />
+    <meta property="og:image" content="preview.png" />
+    <meta property="og:site_name" content="HTML_Mini_Project Site" />
+
+    <!--  favicon -->
+    <link rel="icon" type="image/x-icon" href="fav.ico" />
+
+    <title>HTML_Mini_Assignment-Overall about HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Sample Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">W3 School</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <!-- select image -->
+      <section class="sec_img_gallery">
+        <h2>Image Gallery</h2>
+        <img
+          src="img_gallery_1.png"
+          alt="img_gallery_1"
+          width="200" height="300"
+        />
+        <img
+          src="img_gallery_2.jpg"
+          alt="img_gallery_2"
+          width="200" height="300"
+        />
+        <img
+          src="img_gallery_3.jpg"
+          alt="img_gallery_3"
+          width="200" height="300"
+        />
+      </section>
+      <hr />
+
+      <!-- table -->
+      <section>
+        <h2>Table Layout</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alice</td>
+              <td>Developer</td>
+              <td>Japan</td>
+            </tr>
+            <tr>
+              <td>Bob</td>
+              <td>Designer</td>
+              <td>Myanmar</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+
+      <!-- video -->
+      <section>
+        <video width="320" height="240" controls>
+          <source src="video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <hr />
+
+      <!-- google map -->
+      <section>
+        <h2>Map</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.0906947091867!2d96.17009117492013!3d16.772162784013883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed3baf623315%3A0x3940d28162a3a831!2sCGM%20Golden%20Land%20Co.%2C%20Ltd.!5e0!3m2!1sen!2smm!4v1778044377319!5m2!1sen!2smm"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <hr />
+
+      <!-- contact form section -->
+      <section class="sec_contact_form">
+        <h2>Contact Form</h2>
+        <form action>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required /><br /><br />
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required /><br /><br />
+
+          <!-- checkbox -->
+          <input
+            type="checkbox"
+            name="text[]"
+            id="text"
+            value="text"
+            required
+          />
+          <label for="text">Subscribe to newsletter</label><br /><br />
+          <input type="radio" name="gender" id="male" value="male" required />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+            required
+          />
+          <label for="female">Female</label><br /><br />
+
+          <!-- upload file -->
+          <label for="file">Upload File:</label>
+          <input type="file" name="file" id="file" required /><br /><br />
+
+          <!-- country -->
+          <label for="country">Select Country:</label>
+          <select name="country" id="country">
+            <option value="myan">Myanmar</option>
+            <option value="jap" selected>Japan</option>
+            <option value="thai">Thailand</option>
+            <option value="chi">China</option>
+            <option value="nor">Norway</option></select
+          ><br /><br />
+
+          <!-- textarea -->
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" rows="5" cols="30" required></textarea
+          ><br /><br />
+
+          <!-- button -->
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+      <hr />
+    </main>
+    <footer>
+      <h2>Follow Us</h2>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/cgmgl" target="_blank">Facebook</a>
+        </li>
+        <li><a href="tel:09402075080">09402075080</a></li>
+        <li>
+          <a href="mailto:info@cgml-myanmar.com">info@cgml-myanmar.com</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
